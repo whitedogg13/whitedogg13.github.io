@@ -34,7 +34,13 @@ Local server media types do not prove GitHub Pages media types.
 
 After pushing a reviewed commit, verify the homepage, entry page and both
 association URLs with HTTPS: HTTP 200, no redirects, the correct content and
-media type. Check Apple CDN retrieval and the actual signed app identities.
+media type. Android's origin must use `application/json`. GitHub Pages serves
+the extensionless AASA as `application/octet-stream`; the verified Apple CDN
+endpoint, `https://app-site-association.cdn-apple.com/a/v1/whitedogg13.github.io`,
+recognizes it as JSON and serves the same parsed body as `application/json`
+with `Apple-Origin-Format: json`. Record both headers and compare the JSON;
+do not infer signed-device acceptance solely from CDN success.
+Check Apple CDN retrieval and the actual signed app identities.
 Test natural Android domain verification and external Notes/Mail links on a
 signed iPhone. Builds, simulator checks and forced package launches do not
 substitute for physical-device association verification.
