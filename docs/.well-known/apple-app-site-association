@@ -2,9 +2,16 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["CN3C72UH9L.lockapp.reallocks.com"],
+        "appIDs": [
+          "CN3C72UH9L.lockapp.reallocks.com"
+        ],
         "components": [
-          {"/": "/react-native-nfc-lock/customer/open/"}
+          {
+            "/": "/react-native-nfc-lock/"
+          },
+          {
+            "/": "/react-native-nfc-lock/customer/open/"
+          }
         ]
       }
     ]

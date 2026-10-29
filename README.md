@@ -6,17 +6,25 @@ GitHub Pages publishes `main` → `/docs` at <https://whitedogg13.github.io/>.
 The old Gatsby source is retained; publishing this static skeleton does not run
 Gatsby or install npm dependencies. `docs/.nojekyll` preserves `.well-known`.
 
-The only Customer App launch URL is
-<https://whitedogg13.github.io/react-native-nfc-lock/customer/open/>. It opens or
-foregrounds the app without choosing a screen or performing NFC work. When the
-browser retains the link, the same URL serves installation and opening guidance.
+The Traditional Chinese Real Locks Customer promotion page lives at
+<https://whitedogg13.github.io/react-native-nfc-lock/>. The root homepage links
+to this introduction. The promotion page and existing launch fallback share
+the red/white REAL branding, original logo and app icon from the Customer app.
+All visitor-facing pages use Real Locks Customer; existing technical package
+identifiers and the preserved Gatsby source are unchanged.
+
+Customer App entry URLs are
+<https://whitedogg13.github.io/react-native-nfc-lock/> and the retained
+<https://whitedogg13.github.io/react-native-nfc-lock/customer/open/>. They open or
+foreground the app without choosing a screen or performing NFC work. When the
+browser retains a link, the same URL serves the promotion or opening guidance.
 No public store/download URL is assumed. Safari same-domain navigation and user
 preferences can keep the page in a browser; no forced-open script is used.
 
 Association files must remain at the domain root:
 
 - `/.well-known/apple-app-site-association`: signed iOS application identifier
-  `CN3C72UH9L.lockapp.reallocks.com`, with the one exact path in `components`.
+  `CN3C72UH9L.lockapp.reallocks.com`, with only the two exact entry paths in `components`.
 - `/.well-known/assetlinks.json`: Android package `lockapp.reallocks.com` and the
   current distributed APK certificate fingerprint. The existing distribution
   uses the repository debug signing identity. When release signing or Play App
