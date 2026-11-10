@@ -6,20 +6,19 @@ GitHub Pages publishes `main` → `/docs` at <https://whitedogg13.github.io/>.
 The old Gatsby source is retained; publishing this static skeleton does not run
 Gatsby or install npm dependencies. `docs/.nojekyll` preserves `.well-known`.
 
-The Traditional Chinese Real Locks Customer promotion page lives at
+The English NFC SmartLock promotion page lives at
 <https://whitedogg13.github.io/react-native-nfc-lock/>. The root homepage links
-to this introduction. The promotion page and existing launch fallback share
-the red/white REAL branding, original logo and app icon from the Customer app.
-All visitor-facing pages use Real Locks Customer; existing technical package
-identifiers and the preserved Gatsby source are unchanged.
+to it. The promotion page and launch fallback share the REAL branding, logo
+and app icon, and link to the [App Store](https://apps.apple.com/tw/app/nfc-smartlock/id6822273038)
+and [Google Play](https://play.google.com/store/apps/details?id=lockapp.reallocks.com&pcampaignid=web_share).
 
-Customer App entry URLs are
-<https://whitedogg13.github.io/react-native-nfc-lock/> and the retained
-<https://whitedogg13.github.io/react-native-nfc-lock/customer/open/>. They open or
-foreground the app without choosing a screen or performing NFC work. When the
-browser retains a link, the same URL serves the promotion or opening guidance.
-No public store/download URL is assumed. Safari same-domain navigation and user
-preferences can keep the page in a browser; no forced-open script is used.
+The app entry URLs are
+<https://whitedogg13.github.io/react-native-nfc-lock/> and
+<https://whitedogg13.github.io/react-native-nfc-lock/customer/open/>.
+When the operating system hands off a link, a supported app build can start an
+NFC scan with saved authentication. When the browser retains a link, the same
+URL serves the promotion page or opening guidance. Safari same-domain
+navigation and user preferences can keep the page in a browser.
 
 Association files must remain at the domain root:
 
